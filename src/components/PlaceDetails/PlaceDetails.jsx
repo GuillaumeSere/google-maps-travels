@@ -1,8 +1,8 @@
 import React from 'react';
-import { Box, Typography, Button, Card, CardMedia, CardContent, CardActions, Chip } from '@material-ui/core';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
-import PhoneIcon from '@material-ui/icons/Phone';
-import Rating from '@material-ui/lab/Rating';
+import { Box, Typography, Button, Card, CardMedia, CardContent, CardActions, Chip } from '@mui/material';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneIcon from '@mui/icons-material/Phone';
+import Rating from '@mui/material/Rating';
 
 import useStyles from './style.js';
 
@@ -39,8 +39,8 @@ const PlaceDetails = ({ place, selected, refProp }) => {
                     </Typography>
                 </Box>
                 {place?.awards?.map((award) => (
-                    <Box display="flex" justifyContent="space-between" my={1} alignItems="center">
-                        <img src={award.images.small} />
+                    <Box key={award.display_name} display="flex" justifyContent="space-between" my={1} alignItems="center">
+                        <img src={award.images.small} alt={award.display_name} />
                         <Typography variant="subtitle2" color="textSecondary">{award.display_name}</Typography>
                     </Box>
                 ))}
@@ -48,7 +48,7 @@ const PlaceDetails = ({ place, selected, refProp }) => {
                     <Chip key={name} size="small" label={name} className={classes.chip} />
                 ))}
                 {place.address && (
-                    <Typography gutterBottom variant="body2" color="textPimary" className={classes.subtitle}>
+                    <Typography gutterBottom variant="body2" color="textPrimary" className={classes.subtitle}>
                         <LocationOnIcon />{place.address}
                     </Typography>
                 )}

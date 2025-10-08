@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header/Header';
-import { CssBaseline } from '@material-ui/core';
+import { CssBaseline } from '@mui/material';
 
 const Auth = () => {
   return (
