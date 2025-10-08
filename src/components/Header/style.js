@@ -25,7 +25,7 @@ export default makeStyles((theme) => ({
     color: 'inherit',
   },
   inputInput: {
-    padding: theme.spacing(1, 1, 1, 0), paddingLeft: `calc(1em + ${theme.spacing(4)}px)`, transition: theme.transitions.create('width'), width: '100%', [theme.breakpoints.up('md')]: { width: '25ch' },
+    padding: theme.spacing(1, 1, 1, 0), paddingLeft: '40px',color:'#fff', transition: theme.transitions.create('width'), width: '100%', [theme.breakpoints.up('md')]: { width: '25ch' },
   },
   toolbar: {
     display: 'flex', justifyContent: 'space-between',

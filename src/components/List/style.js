@@ -2,7 +2,7 @@ import { makeStyles } from '@mui/styles';
 
 export default makeStyles((theme) => ({
   formControl: {
-    margin: theme.spacing(1), minWidth: 120, marginBottom: '30px', width: '100%',
+    margin: theme.spacing(1), minWidth: 120, marginBottom: '30px', width: '30%',
   },
   selectEmpty: {
     marginTop: theme.spacing(2),
